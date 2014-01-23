@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Aeon1" />
+	<title>Prueba IOS</title>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    function onDeviceReady() {
+       $('input').show('normal');
+    }
+
+    </script>
+    <script>
+    $(document).ready(function(){
+       $('input').click(function(){
+        $('input').hide('normal');
+        $('img').delay(1000).show();
+       }); 
+    });
+    </script>
+    <style>
+    input{display: none;width: 50%;height: 20%;margin: auto;}
+    img{width: 100%; height: auto; display: none;margin: auto;}
+    </style>
+</head>
+
+<body>
+<input type="button" value="presionar" id="press" />
+<img src="img/jeans.jpg" />
+
+</body>
+</html>
